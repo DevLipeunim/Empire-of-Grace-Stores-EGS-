@@ -94,7 +94,7 @@ form.sign-up-form{
 }
 
 .title {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   color: rgb(0, 0, 0);
   margin-bottom: 10px;
 }
@@ -115,8 +115,13 @@ form.sign-up-form{
 .input-field i {
   text-align: center;
   line-height: 55px;
-  color: #acacac;
-  font-size: 1.1rem;
+  /* color: #acacac; */
+  /* /* font-size: 1.1rem;
+    position: absolute; */
+  /* top: 50%; */
+  right: 10px;
+  /* transform: translateY(-50%); */
+  font-size: 18px;
 }
 
 .input-field input {
@@ -132,6 +137,20 @@ form.sign-up-form{
 .input-field input::placeholder {
   color: rgb(163, 162, 162);
   font-weight: 500;
+}
+
+.form-link{
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.form-link a{
+  text-decoration: none;
+}
+
+.form-link a:hover{
+  text-decoration: underline;
 }
 .eye-icon{
   position: absolute;

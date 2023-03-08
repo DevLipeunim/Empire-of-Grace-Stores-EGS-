@@ -1,27 +1,21 @@
 const sign_in_btn = document.querySelector("#sign-in-btn");
 const sign_up_btn = document.querySelector("#sign-up-btn");
 const container = document.querySelector(".container");
-const forms = document.querySelector(".forms");
-const pwShowHide = document.querySelectorAll(".eye-icon");
+const password_1 = document.querySelector(".password_1");
+const password_2 = document.querySelector(".password_2");
 
-pwShowHide.forEach((eyeIcon) => {
-  eyeIcon.addEventListener("click", () => {
-    let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(
-      ".password"
-    );
-    console.log(pwFields);
-
-    pwFields.forEach((password) => {
-      if (password.type === "password") {
-        password.type = "text";
-        eyeIcon.classList.replace("fa-eye-slash", "fa-eye");
-        return;
-      }
-      password.type = "password";
-      eyeIcon.classList.replace("fa-eye", "fa-eye-slash");
-    });
-  });
-});
+let changeIcon = function(icon) {
+  if (password_1.type === 'password' || password_2.type === 'password'){
+    password_1.setAttribute('type', 'text');
+    password_2.setAttribute('type', 'text');
+    icon.classList.toggle('fa-eye-slash');
+  }
+  else{
+    password_1.setAttribute('type', 'password');
+    password_2.setAttribute('type', 'password');
+    icon.classList.toggle('fa-eye');
+  }
+}
 
 sign_up_btn.addEventListener("click", () => {
   container.classList.add("sign-up-mode");

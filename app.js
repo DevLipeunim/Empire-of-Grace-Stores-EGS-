@@ -4,6 +4,7 @@ const container = document.querySelector(".container");
 const password_1 = document.querySelector(".password_1");
 const password_2 = document.querySelector(".password_2");
 
+
 let changeIcon = function(icon) {
   if (password_1.type === 'password' || password_2.type === 'password'){
     password_1.setAttribute('type', 'text');

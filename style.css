@@ -104,7 +104,7 @@ form.sign-up-form {
   margin-bottom: 10px;
 }
 
-.input-field {
+.input-field, .input-field_2 {
   position: relative;
   max-width: 380px;
   width: 100%;
@@ -120,6 +120,10 @@ form.sign-up-form {
   inset -4px -4px 10px rgba(255,255,255,1),
   4px 4px 10px rgba(0,0,0,0.05)
 }
+.input-field_2{
+  height: 45px;
+  margin: 8px 0;
+}
 
 .icon {
   position: absolute;
@@ -128,11 +132,10 @@ form.sign-up-form {
   transform: translateY(-50%);
   font-size: 20px;
   color: #acacac;
-  cursor: pointer;
   padding: 5px;
 }
 
-.input-field input {
+.input-field input, .input-field_2 input {
   position: absolute;
   top: 50%;
   left: 55px;
@@ -147,7 +150,7 @@ form.sign-up-form {
   color: #333;
 }
 
-.input-field input::placeholder {
+.input-field input::placeholder, .input-field_2 input::placeholder{
   color: rgb(163, 162, 162);
   font-weight: 500;
 
